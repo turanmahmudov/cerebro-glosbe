@@ -1,0 +1,38 @@
+{
+  "name": "cerebro-glosbe",
+  "version": "0.0.1",
+  "description": "",
+  "license": "GNU-GPL-v3",
+  "repository": "turanmahmudov/cerebro-glosbe",
+  "author": {
+    "name": "Turan Mahmudov",
+    "email": "turan.mahmudov@gmail.com",
+    "url": "turanmahmudov.net"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "build": "webpack && babili dist -d dist --compact --no-comments",
+    "debug": "./scripts/debug",
+    "prepublish": "rm -rf ./dist && npm run build"
+  },
+  "main": "dist/index.js",
+  "keywords": [
+    "cerebro",
+    "cerebro-glosbe"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-loader": "^6.2.8",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babili": "0.0.9",
+    "cerebro-tools": "^0.1.0",
+    "css-loader": "^0.26.0",
+    "react": "^15.4.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "2.1.0-beta.27"
+  }
+}
